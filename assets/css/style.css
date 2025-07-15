@@ -1,34 +1,24 @@
-body {
-    background: light green;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Asterisk wildcard selector to override default styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+/* Header */
+header{
+    background: lightcoral;
+    
 }
 
-h1 {
-    margin: 0;
+/*  main section */
+main content{
+    background:yellow;
+
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* footer */
+footer{
+    background: green;
 }
