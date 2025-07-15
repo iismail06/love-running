@@ -4,6 +4,16 @@
     margin: 0;
     padding: 0;
 }
+/*General styles */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic poject styling */
+    color: #3a3a3a;
+
+}
 
 /* Header */
 header{
@@ -12,9 +22,10 @@ header{
 }
 
 /*  main section */
-main content{
-    background:yellow;
-
+main{
+    background: blue;
+    /*make main element fill the remaining space  push footer down*/
+    flex: 1 0 auto;
 }
 
 
