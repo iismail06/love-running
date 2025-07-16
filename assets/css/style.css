@@ -6,6 +6,7 @@
    margin: 0;
    padding: 0;
 }
+
 /*General styles */
 
 
@@ -16,7 +17,7 @@ body {
    /* Generic poject styling */
    color: #3a3a3a;
    font-family: "Lato", sans-serif;
-    font-weight: 300;
+   font-weight: 300;
 
 
 
@@ -24,43 +25,60 @@ body {
 
 
 /* Header */
-header{
+header {
    background: #ffffff;
    padding: 0 1rem;
    position: fixed;
    z-index: 99;
    width: 100%;
    box-shadow: 0 2px 2px #3a3a3a;
-  
+
 }
+
 header a {
    text-decoration: none;
    color: inherit;
 }
 
-h1{
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;      /* Makes the text uppercase */
-    letter-spacing: 2px;
-    color:#252525
+h1 {
+   font-family: "Oswald", sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   /* Makes the text uppercase */
+   letter-spacing: 2px;
+   color: #252525
 }
-/*navigation menu */
+
+/*navigation menu style for mobile header */
 #menu {
    font-size: 110%;
    letter-spacing: 4px;
    list-style-type: none;
-} 
+}
+
 /* navigation menu items to make vertical */
 #menu li {
    margin-bottom: 1rem;
 }
+
 .active {
    border-bottom: 1px solid #3a3a3a;
 }
 
+/* navbar style with dropdown toggle */
+nav {
+   position: absolute;
+   background-color: #ffffff;
+   padding: 0 1rem;
+   width: 100%;
+   left: 0;
+   box-shadow: 0 2px 2px #3a3a3a;
+   display: none; /* Hidden by default */ 
+
+}
+
 /*  main section */
-main{
+main {
    background: blue;
    /*make main element fill the remaining space  push footer down*/
    flex: 1 0 auto;
@@ -70,7 +88,7 @@ main{
 
 
 /* footer */
-footer{
+footer {
    background: green;
 }
 
@@ -81,30 +99,30 @@ footer{
 
 
 .lato-thin {
- font-family: "Lato", sans-serif;
- font-weight: 100;
- font-style: normal;
+   font-family: "Lato", sans-serif;
+   font-weight: 100;
+   font-style: normal;
 }
 
 
 .lato-light {
- font-family: "Lato", sans-serif;
- font-weight: 300;
- font-style: normal;
+   font-family: "Lato", sans-serif;
+   font-weight: 300;
+   font-style: normal;
 }
 
 
 .lato-regular {
- font-family: "Lato", sans-serif;
- font-weight: 400;
- font-style: normal;
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 
 .lato-bold {
- font-family: "Lato", sans-serif;
- font-weight: 700;
- font-style: normal;
+   font-family: "Lato", sans-serif;
+   font-weight: 700;
+   font-style: normal;
 }
 
 
@@ -115,10 +133,8 @@ footer{
 
 
 .oswald-regular {
- font-family: "Oswald", sans-serif;
- font-optical-sizing: auto;
- font-weight: 400;
- font-style: normal;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
 }
-
-
