@@ -18,7 +18,14 @@ body {
    color: #3a3a3a;
    font-family: "Lato", sans-serif;
    font-weight: 300;
-
+}
+h1, h2, h3 {
+   font-family: "Oswald", sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   /* Makes the text uppercase */
+   letter-spacing: 2px;
+   color: #252525
 }
 
 
@@ -42,14 +49,7 @@ header a {
    color: inherit;
 }
 
-h1 {
-   font-family: "Oswald", sans-serif;
-   font-weight: 700;
-   text-transform: uppercase;
-   /* Makes the text uppercase */
-   letter-spacing: 2px;
-   color: #252525
-}
+
 
 /*navigation menu style for mobile header */
 #menu {
@@ -112,8 +112,23 @@ main {
    height: 600px;
    width: 100%;
    background: url("../images/hero-image.webp") no-repeat center center / cover;
+   position: relative;
 }
 
+#cover-text {
+   /* find value in rgba setting the opacity */
+   background-color: rgba(241,109,107,.7);
+   font-size: 130%;
+   position: absolute;
+   bottom:30px;
+   width: 80%;
+   min-height: 200px;
+   padding-top: 40px;
+   padding-left: 10px;
+}
+#cover-text > h2, #cover-text > h3 {
+color: #ffffff;
+}
 
 
 /* Font import for Lato */
@@ -217,6 +232,11 @@ main {
    main {
       margin-top: 79px;
       /* Adjust margin to account for larger header */
+   }
+   /* Hero section */
+   #cover-text{
+      width: 300px;     /* Adjust width for larger screens */
+      right: 50px;
    }
 }
 
