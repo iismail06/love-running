@@ -1,77 +1,99 @@
-/* Google fonts import */ @import url('https://fonts.googleapis.com/css2?family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=Oswald:wght@200..700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
 /* Asterisk wildcard selector to override default styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 /*General styles */
 
+
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic poject styling */
-    color: #3a3a3a;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   /* Generic poject styling */
+   color: #3a3a3a;
+   font-family: "Lato", sans-serif;
+    font-weight: 300;
+
+
 
 }
+
 
 /* Header */
 header{
-    background: lightcoral;
-    
+   background: red;
+  
 }
+h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
 
 /*  main section */
 main{
-    background: blue;
-    /*make main element fill the remaining space  push footer down*/
-    flex: 1 0 auto;
+   background: blue;
+   /*make main element fill the remaining space  push footer down*/
+   flex: 1 0 auto;
 }
+
+
 
 
 /* footer */
 footer{
-    background: green;
+   background: green;
 }
+
 
 /* Font import for Lato */
 /* <weight>: Use a value from 100 to 700*/
 /*lato: css class*/
 
+
 .lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+ font-family: "Lato", sans-serif;
+ font-weight: 100;
+ font-style: normal;
 }
+
 
 .lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+ font-family: "Lato", sans-serif;
+ font-weight: 300;
+ font-style: normal;
 }
+
 
 .lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+ font-family: "Lato", sans-serif;
+ font-weight: 400;
+ font-style: normal;
 }
 
+
 .lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+ font-family: "Lato", sans-serif;
+ font-weight: 700;
+ font-style: normal;
 }
+
 
 /*oswald: css class for a variable style*/
 /* Font import for Oswald */
 /*<weight>: Use a value from 200 to 700
 // <uniquifier>: Use a unique and descriptive class name */
 
-.oswald-<uniquifier> {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+
+.oswald-regular {
+ font-family: "Oswald", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ font-style: normal;
 }
+
 
