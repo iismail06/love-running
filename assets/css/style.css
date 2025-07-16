@@ -148,9 +148,25 @@ color: #ffffff;
 #benefits p {
    padding: 0 20px;
 }
-hr {
+#benefits-hr {
    border-top: 1px solid #3a3a3a;
    margin: 5px 0;
+}
+
+#circle-cover-bg {
+   background: url("../images/reasons-image.webp") no-repeat top center / cover;
+   width: 90vw;
+   height: 90vw;
+   margin-bottom: 20px;
+   /* Make the square image into a circle */
+   border-radius: 50%;
+   max-width: 300px;
+   max-height: 300px;
+}
+#benefits-image {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
