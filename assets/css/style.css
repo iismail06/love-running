@@ -45,7 +45,19 @@ h1{
     letter-spacing: 2px;
     color:#252525
 }
-
+/*navigation menu */
+#menu {
+   font-size: 110%;
+   letter-spacing: 4px;
+   list-style-type: none;
+} 
+/* navigation menu items to make vertical */
+#menu li {
+   margin-bottom: 1rem;
+}
+.active {
+   border-bottom: 1px solid #3a3a3a;
+}
 
 /*  main section */
 main{
