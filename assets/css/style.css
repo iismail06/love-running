@@ -192,3 +192,12 @@ footer {
       margin-top: 79px; /* Adjust margin to account for larger header */
 }
 }
+/* larger device(laptop and desktop, 992px and up) */
+@media screen and (min-width: 992px) {
+
+#menu a:hover {
+   border-bottom: 1px solid #3a3a3a;
+}
+   }
+
+  
