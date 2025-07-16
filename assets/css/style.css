@@ -180,7 +180,15 @@ footer {
       padding-left: 1rem;
    }
    .nav-toggle-label {
-      display: none;
-      /* Hide the toggle label on larger screens */
+      display: none;          /* Hide the toggle label on larger screens */
    }
+   #logo{
+      font-size: 280%;       /* Increase logo size on larger screens */
+      line-height: 75px;     /* Adjust line height for better alignment */
+      margin: 0 0.5rem;        /* Adjust margin for better spacing */
+   }
+   /* main content */
+   main {
+      margin-top: 79px; /* Adjust margin to account for larger header */
+}
 }
