@@ -97,6 +97,7 @@ main {
    background: blue;
    /*make main element fill the remaining space  push footer down*/
    flex: 1 0 auto;
+   margin-top: 47px;
 }
 
 
