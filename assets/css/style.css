@@ -32,7 +32,7 @@ header {
    z-index: 99;
    width: 100%;
    box-shadow: 0 2px 2px #3a3a3a;
-   display: flex;
+   display: flex; /* to align items in a row */
    justify-content: space-between;
    align-items: baseline;
 
@@ -62,6 +62,7 @@ h1 {
 /* navigation menu items to make vertical */
 #menu li {
    margin-bottom: 1rem;
+   list-style-type: none; /* Remove bullet points */
 }
 
 .active {
