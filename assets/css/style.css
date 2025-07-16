@@ -19,8 +19,6 @@ body {
    font-family: "Lato", sans-serif;
    font-weight: 300;
 
-
-
 }
 
 
@@ -32,7 +30,8 @@ header {
    z-index: 99;
    width: 100%;
    box-shadow: 0 2px 2px #3a3a3a;
-   display: flex; /* to align items in a row */
+   display: flex;
+   /* to align items in a row */
    justify-content: space-between;
    align-items: baseline;
 
@@ -62,7 +61,8 @@ h1 {
 /* navigation menu items to make vertical */
 #menu li {
    margin-bottom: 1rem;
-   list-style-type: none; /* Remove bullet points */
+   list-style-type: none;
+   /* Remove bullet points */
 }
 
 .active {
@@ -77,19 +77,26 @@ nav {
    width: 100%;
    left: 0;
    box-shadow: 0 2px 2px #3a3a3a;
-   display: none; /* Hidden by default */
-   top: 100%; /* Position below the header */
+   display: none;
+   /* Hidden by default */
+   top: 100%;
+   /* Position below the header */
 
 }
+
 /*navbar toggle button */
-#nav-toggle:checked ~ nav {
-   display: block; /* Show the nav when the toggle is checked */
+#nav-toggle:checked~nav {
+   display: block;
+   /* Show the nav when the toggle is checked */
 }
-#nav-toggle{
-   display: none; /* Hide the checkbox */
+
+#nav-toggle {
+   display: none;
+   /* Hide the checkbox */
 }
+
 .nav-toggle-label {
- font-size: 2rem;
+   font-size: 2rem;
 }
 
 
@@ -102,12 +109,6 @@ main {
 }
 
 
-
-
-/* footer */
-footer {
-   background: green;
-}
 
 
 /* Font import for Lato */
@@ -154,4 +155,28 @@ footer {
    font-optical-sizing: auto;
    font-weight: 400;
    font-style: normal;
+}
+/* footer */
+footer {
+   background: green;
+}
+
+/*Media queries for responsive design for tablet and larger (768px and up) */
+@media screen and (min-width: 768px) {
+   /* Header */
+   nav {
+      display: block;
+      position: relative;
+      box-shadow: none;
+      width: fit-content;
+      padding-right: 1rem;
+
+   }
+
+   #menu {
+      display: flex; 
+   }
+   #menu li {
+      padding-left: 1rem;
+   }
 }
