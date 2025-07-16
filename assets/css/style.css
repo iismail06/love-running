@@ -156,6 +156,7 @@ main {
    font-weight: 400;
    font-style: normal;
 }
+
 /* footer */
 #social-networks {
    text-align: center;
@@ -164,6 +165,7 @@ main {
    justify-content: space-evenly;
    list-style-type: none;
 }
+
 #social-networks i {
    font-size: 160%;
    color: #3a3a3a;
@@ -173,6 +175,7 @@ main {
 
 /*Media queries for responsive design for tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
    /* Header */
    nav {
       display: block;
@@ -184,30 +187,38 @@ main {
    }
 
    #menu {
-      display: flex; 
+      display: flex;
    }
+
    #menu li {
       padding-left: 1rem;
    }
+
    .nav-toggle-label {
-      display: none;          /* Hide the toggle label on larger screens */
+      display: none;
+      /* Hide the toggle label on larger screens */
    }
-   #logo{
-      font-size: 280%;       /* Increase logo size on larger screens */
-      line-height: 75px;     /* Adjust line height for better alignment */
-      margin: 0 0.5rem;        /* Adjust margin for better spacing */
+
+   #logo {
+      font-size: 280%;
+      /* Increase logo size on larger screens */
+      line-height: 75px;
+      /* Adjust line height for better alignment */
+      margin: 0 0.5rem;
+      /* Adjust margin for better spacing */
    }
+
    /* main content */
    main {
-      margin-top: 79px; /* Adjust margin to account for larger header */
+      margin-top: 79px;
+      /* Adjust margin to account for larger header */
+   }
 }
-}
+
 /* larger device(laptop and desktop, 992px and up) */
 @media screen and (min-width: 992px) {
 
-#menu a:hover {
-   border-bottom: 1px solid #3a3a3a;
-}
+   #menu a:hover {
+      border-bottom: 1px solid #3a3a3a;
    }
-
-  
+}
