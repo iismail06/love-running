@@ -32,6 +32,9 @@ header {
    z-index: 99;
    width: 100%;
    box-shadow: 0 2px 2px #3a3a3a;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
 
 }
 
@@ -73,9 +76,21 @@ nav {
    width: 100%;
    left: 0;
    box-shadow: 0 2px 2px #3a3a3a;
-   display: none; /* Hidden by default */ 
+   display: none; /* Hidden by default */
+   top: 100%; /* Position below the header */
 
 }
+/*navbar toggle button */
+#nav-toggle:checked ~ nav {
+   display: block; /* Show the nav when the toggle is checked */
+}
+#nav-toggle{
+   display: none; /* Hide the checkbox */
+}
+.nav-toggle-label {
+ font-size: 2rem;
+}
+
 
 /*  main section */
 main {
