@@ -163,6 +163,7 @@ color: #ffffff;
    max-width: 300px;
    max-height: 300px;
 }
+
 #benefits-image {
    display: flex;
    justify-content: center;
@@ -279,6 +280,20 @@ color: #ffffff;
       width: 300px;     /* Adjust width for larger screens */
       right: 50px;
    }
+   /* Reasons Section */
+   #benefits-physical, #benefits-mental {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+   #benefits-physical > div, #benefits-mental > div {
+      width: 75%;
+      margin-bottom: 20px;
+   }
+   #benefits-mental > div {
+      text-align: end;
+      align-self: flex-end;
+   }
 }
 
 /* larger device(laptop and desktop, 992px and up) */
@@ -288,4 +303,33 @@ color: #ffffff;
       border-bottom: 1px solid #3a3a3a;
    }
 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+
+#benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+#benefits > div {
+    flex: 1;
+}
+
+#benefits-image {
+    order: 0;
+}
+
+#benefits-mental {
+    order: 1;
+}
+
+#benefits-mental > div {
+    align-self: flex-start;
+}
+
+#benefits-physical > div {
+    align-self: flex-end;
+}
 }
