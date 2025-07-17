@@ -265,6 +265,13 @@ color: #ffffff;
    font-style: normal;
 }
 
+/* Media queries: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+   #gallery {
+       column-count: 2;  /* Two columns for gallery images */
+         column-gap: 0; /* Space between columns */
+   }
+}
 
 
 /*Media queries for responsive design for tablet and larger (768px and up) */
@@ -329,6 +336,11 @@ color: #ffffff;
       text-align: end;
       align-self: flex-end;
    }
+   /* Gallery page */
+    #gallery {
+       column-count: 3;  /* Three columns for gallery images */
+         column-gap: 0; /* Space between columns */
+   }
 }
 
 /* larger device(laptop and desktop, 992px and up) */
@@ -336,6 +348,34 @@ color: #ffffff;
 
    #menu a:hover {
       border-bottom: 1px solid #3a3a3a;
+   }
+
+   #benefits {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   #benefits-image, #benefits-mental, #benefits-physical {
+      flex: 1;
+      margin: 0 10px;
+   }
+
+   #benefits-image {
+      order: 0;
+   }
+
+   #benefits-mental {
+      order: 1;
+   }
+
+   #benefits-physical {
+      order: 2;
+   }
+   /* Gallery page */
+   #gallery {
+      column-count: 4;  /* Four columns for gallery images */
+      column-gap: 0; /* Space between columns */
    }
 
 }
