@@ -19,7 +19,10 @@ body {
    font-family: "Lato", sans-serif;
    font-weight: 300;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
    font-family: "Oswald", sans-serif;
    font-weight: 700;
    text-transform: uppercase;
@@ -27,7 +30,8 @@ h1, h2, h3 {
    letter-spacing: 2px;
    color: #252525
 }
- /* Hide the header but still available for search engines */
+
+/* Hide the header but still available for search engines */
 .hidden-heading {
    display: none;
 }
@@ -104,11 +108,12 @@ nav {
 
 /*  main section */
 main {
-   
+
    /*make main element fill the remaining space  push footer down*/
    flex: 1 0 auto;
    margin-top: 47px;
 }
+
 /*Hero section */
 #hero {
    height: 600px;
@@ -119,17 +124,19 @@ main {
 
 #cover-text {
    /* find value in rgba setting the opacity */
-   background-color: rgba(241,109,107,.7);
+   background-color: rgba(241, 109, 107, .7);
    font-size: 130%;
    position: absolute;
-   bottom:30px;
+   bottom: 30px;
    width: 80%;
    min-height: 200px;
    padding-top: 40px;
    padding-left: 10px;
 }
-#cover-text > h2, #cover-text > h3 {
-color: #ffffff;
+
+#cover-text>h2,
+#cover-text>h3 {
+   color: #ffffff;
 }
 
 /* Reasons Section */
@@ -143,13 +150,17 @@ color: #ffffff;
    margin-bottom: 20px;
    font-size: 280%;
 }
-#benefits-physical > div, #benefits-mental > div {
+
+#benefits-physical>div,
+#benefits-mental>div {
    margin-bottom: 20px;
    line-height: 20px;
 }
+
 #benefits p {
    padding: 0 20px;
 }
+
 #benefits-hr {
    border-top: 1px solid #3a3a3a;
    margin: 5px 0;
@@ -171,28 +182,35 @@ color: #ffffff;
    justify-content: center;
    align-items: center;
 }
+
 /*Meetup Times Section */
 #times {
-   background:url("../images/dublin-city.webp") no-repeat center center / cover;
+   background: url("../images/dublin-city.webp") no-repeat center center / cover;
    /*Handles responsivity without media queries */
    display: flex;
-   flex-wrap: wrap; /* Allows items to wrap to the next line */
+   flex-wrap: wrap;
+   /* Allows items to wrap to the next line */
 }
+
 #times div {
-   color:#fafafa;
-   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+   color: #fafafa;
+   background-color: rgba(0, 0, 0, 0.6);
+   /* Semi-transparent black background */
    padding: 15px;
    text-align: center;
    /*this will not wrap on screens of less than 400px wide.
    Each div will expand to fill the available space */
-   flex-basis: 200px; /* Minimum width for each item */
-   flex-grow: 1; /* Allows items to grow and fill the space */
+   flex-basis: 200px;
+   /* Minimum width for each item */
+   flex-grow: 1;
+   /* Allows items to grow and fill the space */
    /*Create a grid of meetup times divs over the background image */
-   border:2px solid white;
+   border: 2px solid white;
 }
-#times h3{
+
+#times h3 {
    /* override the header color set in the general styles */
-   color:#fafafa;
+   color: #fafafa;
 }
 
 /* Gallery page */
@@ -203,8 +221,77 @@ color: #ffffff;
    margin: 0 auto;
    line-height: 1em;
 }
+
 #photo {
-  line-height: 0;
+   line-height: 0;
+}
+
+/*Signup page */
+main {
+   flex: 1 0 auto;
+   /*Enlarge main element to push footer down */
+   margin-top: 47px;
+   /* Add margin to account for the fixed header */
+   display: flex;
+   /* Enable flex properties for child elements */
+   flex-direction: column;
+   /* Arrange child elements in a column */
+}
+
+#signup {
+   background-image: url(../images/signup-bg.webp);
+   background-size: cover;
+   background-position: 75%;
+   /* Adjust background position for better visibility */
+   padding: 20px 10% 0 10%;
+   flex-grow: 1;
+   /* Allow the signup section to grow and fill the available space */
+   overflow-y: auto;
+   /* Enable vertical scrolling if content exceeds viewport */
+}
+
+#signup-form {
+   color: #ffffff;
+   background-color: rgba(0, 0, 0, 0.3);
+   /* Semi-transparent black background */
+   padding: 30px;
+   width: 100%;
+   height: 80vh;
+   /* Take up 80% of the screen height */
+   box-sizing: border-box;
+}
+
+#signup-form h2 {
+   color: #ffffff;
+   margin-bottom: 20px;
+}
+
+.text-input {
+   background: transparent;
+   color: #fafafa;
+   width: 100%;
+   height: 25px;
+   margin: 5px 0 20px 0;
+   /* Add margin to separate input fields */
+   border: 1px solid #ffffff;
+   border-radius: 2px;
+   padding: 0 5px;
+}
+
+.radio-buttons {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.join-button {
+   margin-top: 20px;
+   /* Add margin to separate from other elements */
+   border-radius: 2px;
+   padding: 15px 32px;
+   font-size: 100%;
+   background-color: #454b1b;
+   color: #fafafa;
 }
 
 /* footer */
@@ -268,8 +355,10 @@ color: #ffffff;
 /* Media queries: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
    #gallery {
-       column-count: 2;  /* Two columns for gallery images */
-         column-gap: 0; /* Space between columns */
+      column-count: 2;
+      /* Two columns for gallery images */
+      column-gap: 0;
+      /* Space between columns */
    }
 }
 
@@ -314,32 +403,64 @@ color: #ffffff;
       margin-top: 79px;
       /* Adjust margin to account for larger header */
    }
+
    /* Hero section */
    #hero {
-      height: 900px;   /* Adjust height for larger screens */
+      height: 900px;
+      /* Adjust height for larger screens */
    }
+
    #cover-text {
-      width: 300px;     /* Adjust width for larger screens */
+      width: 300px;
+      /* Adjust width for larger screens */
       right: 50px;
    }
+
    /* Reasons Section */
-   #benefits-physical, #benefits-mental {
+   #benefits-physical,
+   #benefits-mental {
       display: flex;
       flex-direction: column;
       width: 100%;
    }
-   #benefits-physical > div, #benefits-mental > div {
+
+   #benefits-physical>div,
+   #benefits-mental>div {
       width: 75%;
       margin-bottom: 20px;
    }
-   #benefits-mental > div {
+
+   #benefits-mental>div {
       text-align: end;
       align-self: flex-end;
    }
+
    /* Gallery page */
-    #gallery {
-       column-count: 3;  /* Three columns for gallery images */
-         column-gap: 0; /* Space between columns */
+   #gallery {
+      column-count: 3;
+      /* Three columns for gallery images */
+      column-gap: 0;
+      /* Space between columns */
+   }
+
+   /* signup page */
+   #signup {
+      background-position: center;
+      position: relative;
+   }
+
+   #signup-form {
+      max-width: 400px;
+      position: fixed;
+   }
+
+   .text-input:hover {
+      border-color: #f16c6b;
+   }
+
+   .join-button:hover {
+      background-color: #fafafa;
+      color: #454b1b
    }
 }
 
@@ -356,7 +477,9 @@ color: #ffffff;
       justify-content: space-between;
    }
 
-   #benefits-image, #benefits-mental, #benefits-physical {
+   #benefits-image,
+   #benefits-mental,
+   #benefits-physical {
       flex: 1;
       margin: 0 10px;
    }
@@ -372,39 +495,58 @@ color: #ffffff;
    #benefits-physical {
       order: 2;
    }
+
    /* Gallery page */
    #gallery {
-      column-count: 4;  /* Four columns for gallery images */
-      column-gap: 0; /* Space between columns */
+      column-count: 4;
+      /* Four columns for gallery images */
+      column-gap: 0;
+      /* Space between columns */
    }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
 
-#benefits {
-        display: flex;
-        flex-direction: row;
-    }
+   #benefits {
+      display: flex;
+      flex-direction: row;
+   }
 
-#benefits > div {
-    flex: 1;
-}
+   #benefits>div {
+      flex: 1;
+   }
 
-#benefits-image {
-    order: 0;
-}
+   #benefits-image {
+      order: 0;
+   }
 
-#benefits-mental {
-    order: 1;
-}
+   #benefits-mental {
+      order: 1;
+   }
 
-#benefits-mental > div {
-    align-self: flex-start;
-}
+   #benefits-mental>div {
+      align-self: flex-start;
+   }
 
-#benefits-physical > div {
-    align-self: flex-end;
-}
+   #benefits-physical>div {
+      align-self: flex-end;
+   }
+
+   /*signup page*/
+   #signup-form {
+      max-width: 400px;
+      max-height: 450px;
+      position: fixed;
+      background: transparent;
+      color: #fafafa;
+      margin: 5px 0 20px 0;
+      /* Add margin to separate input fields */
+      border: 1px solid #ffffff;
+      border-radius: 2px;
+      padding: 0 5px;
+
+   }
+   
 }

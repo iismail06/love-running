@@ -46,7 +46,41 @@
 
 
     <!-- Main Content -->
-    <main> Main Content </main>
+    <main> 
+        <section id="signup">
+            <form id="signup-form" action="https://learn.codeinstitute.net/" method="post">
+            <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up !</h2>
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" class="text-input" required>
+            <br>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" class="text-input" required>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="text-input" required>
+            <br>
+
+            <div class="radio-buttons"> 
+            <label for="road">Road</label>
+            <input type="radio" id="road" name="running-preference" value="road" checked>
+            </div>
+
+            <div class="radio-buttons">
+            <label for="trail">Trail</label>
+            <input type="radio" id="trail" name="running-preference" value="trail">
+            </div>
+            <div class="radio-buttons">
+            <label for="both">Both</label>
+            <input type="radio" id="both" name="running-preference" value="both">
+            </div>
+
+            <button type="submit" class="join-button">Let's Run!</button>
+        </form>
+    </section>
+    </main>
 
 
     <!-- Footer -->
