@@ -32,7 +32,6 @@ h1, h2, h3 {
    display: none;
 }
 
-
 /* Header */
 header {
    background: #ffffff;
@@ -52,7 +51,6 @@ header a {
    text-decoration: none;
    color: inherit;
 }
-
 
 
 /*navigation menu style for mobile header */
@@ -195,6 +193,18 @@ color: #ffffff;
 #times h3{
    /* override the header color set in the general styles */
    color:#fafafa;
+}
+
+/* Gallery page */
+#gallery img {
+   width: 100%;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+   line-height: 1em;
+}
+#photo {
+  line-height: 0;
 }
 
 /* footer */
