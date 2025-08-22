@@ -321,14 +321,102 @@ main {
    text-align: center;
    padding: 20px 0;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
+   gap: 2rem;
    list-style-type: none;
 }
 
+#social-networks li {
+   display: inline-block;
+}
+
+footer {
+   text-align: center;
+}
 #social-networks i {
    font-size: 160%;
    color: #3a3a3a;
    padding: 5%;
+   transition: color 0.2s;
+}
+
+#social-networks a:hover i {
+   color: #FFD600;
+}
+/* Meetup Map Section Styling */
+#meetup-map {
+   background: #f5f5f5;
+   padding: 2rem 0 2.5rem 0;
+   margin: 2rem 0;
+   border-radius: 16px;
+   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+#meetup-map h2 {
+   text-align: center;
+   margin-bottom: 1.5rem;
+   color: #252525;
+   font-size: 2rem;
+}
+#meetup-map iframe {
+   border-radius: 12px;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+   min-height: 300px;
+}
+#meetup-map p {
+   margin-top: 1rem;
+   color: #454b1b;
+   font-weight: 500;
+}
+/* Upcoming Events (Event Calendar) Section Styling */
+#event-calendar {
+   background: #fff8f0;
+   padding: 2rem 0 2.5rem 0;
+   margin: 2rem 0;
+   border-radius: 16px;
+   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+#event-calendar h2 {
+   text-align: center;
+   margin-bottom: 1.5rem;
+   color: #252525;
+   font-size: 2rem;
+}
+#event-calendar table {
+   width: 90%;
+   margin: 0 auto;
+   border-collapse: collapse;
+   background: #fff;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+#event-calendar th, #event-calendar td {
+   padding: 1rem 0.5rem;
+   text-align: center;
+   border-bottom: 1px solid #f0e6dd;
+}
+#event-calendar th {
+   background: #f5e6d8;
+   color: #454b1b;
+   font-weight: 700;
+   font-size: 1.1rem;
+}
+#event-calendar tr:last-child td {
+   border-bottom: none;
+}
+#event-calendar button {
+   background: #454b1b;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   padding: 0.5rem 1.2rem;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background 0.2s;
+}
+#event-calendar button:hover {
+   background: #f16c6b;
+   color: #fff8f0;
 }
 
 /* Media queries: large or landscape phones (576px and up) */
