@@ -1,10 +1,61 @@
-/* Match map section width to event calendar */
-#meetup-map > div {
-   width: 90%;
-   max-width: 900px;
-   margin-left: auto;
-   margin-right: auto;
+/* Responsive adjustments for hero section */
+@media screen and (max-width: 768px) {
+   #hero {
+      height: 350px;
+   }
+   #cover-text {
+      width: 95%;
+      padding: 20px 5px;
+      font-size: 110%;
+   }
+   .hero-cta {
+      font-size: 1rem;
+      padding: 0.7rem 1.5rem;
+   }
 }
+
+/* Responsive event calendar and map */
+@media screen and (max-width: 900px) {
+   #event-calendar table, #meetup-map > div {
+      width: 98% !important;
+      max-width: 100% !important;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   #event-calendar table, #meetup-map > div {
+      font-size: 0.95rem;
+      padding: 0;
+   }
+   #event-calendar th, #event-calendar td {
+      padding: 0.5rem 0.2rem;
+   }
+   #meetup-map iframe {
+      height: 220px;
+   }
+}
+
+/* Responsive gallery images */
+@media screen and (max-width: 768px) {
+   #gallery {
+      column-count: 1 !important;
+      display: block !important;
+   }
+   #gallery img {
+      width: 100% !important;
+      height: auto !important;
+      margin-bottom: 1rem;
+   }
+}
+
+/* Responsive footer */
+@media screen and (max-width: 600px) {
+   #social-networks {
+      flex-direction: column;
+      gap: 1rem;
+   }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
 /* Asterisk wildcard selector to override default styles */
@@ -15,7 +66,6 @@
 }
 
 /*General styles */
-
 
 body {
    min-height: 100vh;
@@ -157,7 +207,6 @@ main {
    margin-bottom: 20px;
    font-size: 280%;
 }
-
 
 #benefits-physical>div,
 #benefits-mental>div {
