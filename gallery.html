@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
         content="loving running. Club for runner in Dublin, Ireland. Urban running, trail running. Dublin docklands and Phoenix Park.">
     <meta name="keywords" content="love running, run, running club runner, Ireland, Dublin, sport,exercise">
 
-    <!-- Title -->
+
     <title>love Running</title>
 
     <!-- Favicon -->
@@ -23,19 +24,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 
-</head>
-
 <body>
     <!-- Header -->
-
     <header>
         <a href="index.html">
             <h1 id="logo">Love Running</h1>
         </a>
-
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
@@ -45,60 +41,81 @@
         </nav>
     </header>
 
-
     <!-- Main Content -->
     <main>
         <section id="gallery">
             <h2 class="hidden-heading">Gallery</h2>
-            <div id="photos"></div>
-            <img src="assets/images/athletes.webp" alt="Two athletes running together">
-            <img src="assets/images/girls.webp" alt="Three girls at charity paint running festival">
-            <img src="assets/images/runner3.webp" alt="Solo male runner jogging on beach">
-            <img src="assets/images/man.webp" alt="Man at charity paint running festival">
-            <img src="assets/images/runner1.webp" alt="Solo female runner jogging through Phoenix Park">
-            <img src="assets/images/runner2.webp" alt="Runners competing in marathon">
-            <img src="assets/images/runner4.webp" alt="Solo female runner jogging on beach">
-            <img src="assets/images/running_gang.webp"
-                alt="Large group of runners taking part in a marathon on a rainy day">
-            <img src="assets/images/mud-run.webp"
-                alt="Two women runners taking a muddy selfie after the Mud Runners championship">
-            <img src="assets/images/man-and-woman-runner.webp" alt="man and woman runner together">
-            <img src="assets/images/group-people-exercising-together-outdoors.webp" alt="group people exercising together outdoors">
-            <img src="assets/images/full-shot-people-training-together.webp" alt="full people training together outdoors">
-
+            <img src="assets/images/athletes.webp" alt="Two athletes running together" tabindex="0">
+            <img src="assets/images/girls.webp" alt="Three girls at a charity paint running festival, smiling and covered in color powder" tabindex="0">
+            <img src="assets/images/runner3.webp" alt="Solo male runner jogging on a sandy beach at sunrise" tabindex="0">
+            <img src="assets/images/man.webp" alt="Man at a charity paint running festival, smiling and covered in color powder" tabindex="0">
+            <img src="assets/images/runner1.webp" alt="Solo female runner jogging through Phoenix Park, Dublin, on a sunny day" tabindex="0">
+            <img src="assets/images/runner2.webp" alt="Group of runners competing in a city marathon, all ages" tabindex="0">
+            <img src="assets/images/runner4.webp" alt="Solo female runner jogging on a beach, ocean in background" tabindex="0">
+            <img src="assets/images/running_gang.webp" alt="Large group of runners taking part in a marathon on a rainy day, all wearing colorful gear" tabindex="0">
+            <img src="assets/images/mud-run.webp" alt="Two women runners taking a muddy selfie after the Mud Runners championship, both laughing" tabindex="0">
+            <img src="assets/images/man-and-woman-runner.webp" alt="Man and woman running together, both smiling and enjoying the run" tabindex="0">
+            <img src="assets/images/group-people-exercising-together-outdoors.webp" alt="Group of people exercising together outdoors, stretching and warming up" tabindex="0">
+            <img src="assets/images/full-shot-people-training-together.webp" alt="Full shot of people training together outdoors, running in a park" tabindex="0">
         </section>
     </main>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);justify-content:center;align-items:center;" aria-modal="true" role="dialog" tabindex="-1">
+        <img id="lightbox-img" src="" alt="Gallery large view" style="max-width:90vw;max-height:90vh;border-radius:8px;box-shadow:0 2px 16px #000;" tabindex="0">
+    </div>
+
+    <!-- Newsletter Signup Modal -->
+    <div id="newsletter-modal" style="display:none;" aria-modal="true" role="dialog" tabindex="-1">
+        <form id="newsletter-form">
+            <h2>Join Our Newsletter</h2>
+            <label for="newsletter-email">Email address:</label>
+            <input id="newsletter-email" name="email" type="email" required aria-required="true" placeholder="you@email.com" autocomplete="email">
+            <button type="submit">Subscribe</button>
+            <button type="button" id="newsletter-close">Cancel</button>
+            <p id="newsletter-success">Thank you for subscribing!</p>
+        </form>
+    </div>
+    <button id="newsletter-open" aria-label="Open newsletter signup">&#9993;</button>
 
     <!-- Footer -->
-
     <footer>
-        <ul id="social-networks">
-
-            <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter profile (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram profile (opens in a new tab)"><i
-                        class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.youtube.com" target="_blank" rel="noopener"
-                    aria-label="Visit our YouTube channel (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-        </ul>
-
-
+        <p id="copyright">© 2023 Love Running. All rights reserved.</p>
+        <p id="social-networks">
+            <a href="https://www.linkedin.com/in/idil-ismail-2398799b/" target="_blank" rel="noopener" aria-label="Visit our LinkedIn profile (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/iismail06" target="_blank" rel="noopener" aria-label="Visit our GitHub profile (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+        </p>
     </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/b15a7a1def.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-<!-- Lightbox Modal -->
-<div id="lightbox" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;">
-    <img id="lightbox-img" src="" alt="Gallery large view" style="max-width:90vw;max-height:90vh;border-radius:8px;box-shadow:0 2px 16px #000;">
-</div>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/b15a7a1def.js" crossorigin="anonymous"></script>
+  <script>
+// Keyboard navigation for lightbox
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.getElementById('gallery');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    if (gallery && lightbox && lightboxImg) {
+        gallery.addEventListener('keydown', function(e) {
+            if (e.target.tagName === 'IMG' && (e.key === 'Enter' || e.key === ' ')) {
+                lightboxImg.src = e.target.src;
+                lightbox.style.display = 'flex';
+                lightbox.focus();
+            }
+        });
+        lightbox.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
 </body>
 
 </html>

@@ -1,3 +1,10 @@
+/* Match map section width to event calendar */
+#meetup-map > div {
+   width: 90%;
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
 /* Asterisk wildcard selector to override default styles */
@@ -233,6 +240,85 @@ main {
    /* override the header color set in the general styles */
    color: #fafafa;
 }
+/* Newsletter Signup Modal Styles */
+#newsletter-modal {
+   display: none;
+   position: fixed;
+   z-index: 10000;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0,0,0,0.7);
+   justify-content: center;
+   align-items: center;
+}
+#newsletter-modal[aria-modal="true"] {
+   display: flex;
+}
+#newsletter-form {
+   background: #fff;
+   padding: 2rem 2.5rem;
+   border-radius: 12px;
+   box-shadow: 0 2px 16px #000;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-width: 300px;
+   max-width: 90vw;
+}
+#newsletter-form h2 {
+   color: #454b1b;
+   margin-bottom: 1rem;
+}
+#newsletter-form label {
+   margin-bottom: 0.5rem;
+}
+#newsletter-email {
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+#newsletter-form button[type="submit"] {
+   background: #454b1b;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   padding: 0.5rem 1.5rem;
+   font-size: 1rem;
+   cursor: pointer;
+}
+#newsletter-close {
+   margin-top: 1rem;
+   background: none;
+   border: none;
+   color: #f16c6b;
+   font-size: 1.1rem;
+   cursor: pointer;
+}
+#newsletter-success {
+   display: none;
+   color: green;
+   margin-top: 1rem;
+}
+#newsletter-open {
+   position: fixed;
+   bottom: 2rem;
+   right: 2rem;
+   z-index: 999;
+   background: #FFD600;
+   color: #252525;
+   border: none;
+   border-radius: 50%;
+   width: 56px;
+   height: 56px;
+   font-size: 2rem;
+   box-shadow: 0 2px 8px #000;
+   cursor: pointer;
+}
+
 
 /* Gallery page */
 
@@ -247,6 +333,29 @@ main {
 #photo {
    line-height: 0;
 }
+/* Lightbox Modal Styles */
+#lightbox {
+   display: none;
+   position: fixed;
+   z-index: 9999;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0,0,0,0.85);
+   justify-content: center;
+   align-items: center;
+}
+#lightbox[aria-modal="true"] {
+   display: flex;
+}
+#lightbox-img {
+   max-width: 90vw;
+   max-height: 90vh;
+   border-radius: 8px;
+   box-shadow: 0 2px 16px #000;
+}
+
 
 /*Signup page */
 main {
