@@ -56,7 +56,6 @@ Below are the wireframes for the main pages of the website. These wireframes wer
 - JavaScript (for modals, lightbox, and interactivity)
 - Font Awesome (icons)
 
-
 ## Features
 
 - **Hero Section:** Eye-catching image, club slogan, and "Join Now" button.
@@ -80,6 +79,7 @@ Below are the wireframes for the main pages of the website. These wireframes wer
 
 This project is static and can be deployed on GitHub Pages, Netlify, or any static hosting provider.
 To deploy on GitHub Pages:
+
 1. Push the repository to GitHub.
 2. Go to the repository settings > Pages.
 3. Select the main branch and `/ (root)` folder.
