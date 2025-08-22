@@ -151,10 +151,31 @@ main {
    font-size: 280%;
 }
 
+
 #benefits-physical>div,
 #benefits-mental>div {
-   margin-bottom: 20px;
-   line-height: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+/* Redesigned Reasons Section for wrap-around image */
+#benefits {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+}
+
+#benefits-physical, #benefits-mental {
+   width: 100%;
+}
+
+#benefits-image {
+   width: 220px;
+   height: 220px;
+   border-radius: 50%;
+   background: url("../images/reasons-image.webp") no-repeat center/cover;
+   margin: 0 auto;
 }
 
 #benefits p {
@@ -310,48 +331,6 @@ main {
    padding: 5%;
 }
 
-
-/* Font import for Lato */
-/* <weight>: Use a value from 100 to 700*/
-/*lato: css class*/
-
-
-.lato-thin {
-   font-family: "Lato", sans-serif;
-   font-weight: 100;
-   font-style: normal;
-}
-
-.lato-light {
-   font-family: "Lato", sans-serif;
-   font-weight: 300;
-   font-style: normal;
-}
-
-.lato-regular {
-   font-family: "Lato", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-}
-
-.lato-bold {
-   font-family: "Lato", sans-serif;
-   font-weight: 700;
-   font-style: normal;
-}
-
-/*oswald: css class for a variable style*/
-/* Font import for Oswald */
-/*<weight>: Use a value from 200 to 700
-// <uniquifier>: Use a unique and descriptive class name */
-
-
-.oswald-regular {
-   font-family: "Oswald", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-}
-
 /* Media queries: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
    #gallery {
@@ -365,6 +344,31 @@ main {
 
 
 /*Media queries for responsive design for tablet and larger (768px and up) */
+@media screen and (min-width: 992px) {
+   #benefits {
+      display: grid;
+      grid-template-columns: 1fr 220px 1fr;
+      align-items: center;
+      gap: 2rem;
+   }
+   #benefits-physical {
+      text-align: right;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+   }
+   #benefits-mental {
+      text-align: left;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+   }
+   #benefits-image {
+      margin: 0;
+   }
+}
 @media screen and (min-width: 768px) {
 
    /* Header */
@@ -374,7 +378,6 @@ main {
       box-shadow: none;
       width: fit-content;
       padding-right: 1rem;
-
    }
 
    #menu {
@@ -466,6 +469,16 @@ main {
       color: #454b1b
    }
 }
+/* Magazine-style circular image with text wrap for Reasons section */
+.wrap-image {
+   float: left;
+   shape-outside: circle(50%);
+   width: 220px;
+   height: 220px;
+   border-radius: 50%;
+   margin: 0 2rem 1rem 0;
+   background: url("../images/reasons-image.webp") no-repeat center/cover;
+}
 
 /* larger device(laptop and desktop, 992px and up) */
 /*reasons section*/
@@ -517,8 +530,6 @@ main {
       display: block;
       margin-bottom: 0;
    }
-
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -556,8 +567,6 @@ main {
     text-align: left;
   }
 
-  
-
    /* Gallery page*/
   #gallery {
   display: flex;
@@ -573,7 +582,6 @@ main {
   height: 250px;
   object-fit: cover;
   display: block;
-
 }
 
 }
