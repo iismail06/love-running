@@ -1,3 +1,17 @@
+// Mobile navigation: close menu after link click
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const menuLinks = document.querySelectorAll('#menu a');
+    if (navToggle && menuLinks.length > 0) {
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (navToggle.checked) {
+                    navToggle.checked = false;
+                }
+            });
+        });
+    }
+});
 // Newsletter modal logic
 document.addEventListener('DOMContentLoaded', function() {
     const openBtn = document.getElementById('newsletter-open');
