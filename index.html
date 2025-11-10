@@ -158,27 +158,18 @@
         </section>
 
         <!-- Newsletter Signup Modal -->
-        <div id="newsletter-modal"
-            style="display:none;position:fixed;z-index:10000;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;"
-            aria-modal="true" role="dialog" tabindex="-1">
-            <form id="newsletter-form"
-                style="background:#fff;padding:2rem 2.5rem;border-radius:12px;box-shadow:0 2px 16px #000;display:flex;flex-direction:column;align-items:center;min-width:300px;max-width:90vw;">
-                <h2 style="color:#454b1b;margin-bottom:1rem;">Join Our Newsletter</h2>
-                <label for="newsletter-email" style="margin-bottom:0.5rem;">Email address:</label>
-                <input id="newsletter-email" name="email" type="email" required aria-required="true"
-                    placeholder="you@email.com"
-                    style="padding:0.5rem 1rem;border-radius:4px;border:1px solid #ccc;width:100%;margin-bottom:1rem;">
-                <button type="submit"
-                    style="background:#454b1b;color:#fff;border:none;border-radius:4px;padding:0.5rem 1.5rem;font-size:1rem;cursor:pointer;">Subscribe</button>
-                <button type="button" id="newsletter-close"
-                    style="margin-top:1rem;background:none;border:none;color:#f16c6b;font-size:1.1rem;cursor:pointer;">Cancel</button>
-                <p id="newsletter-success" style="display:none;color:green;margin-top:1rem;">Thank you for subscribing!
+        <div id="newsletter-modal" aria-modal="true" role="dialog" tabindex="-1">
+            <form id="newsletter-form">
+                <h2>Join Our Newsletter</h2>
+                <label for="newsletter-email">Email address:</label>
+                <input id="newsletter-email" name="email" type="email" required aria-required="true" placeholder="you@email.com">
+                <button type="submit">Subscribe</button>
+                <button type="button" id="newsletter-close">Cancel</button>
+                <p id="newsletter-success">Thank you for subscribing!
                 </p>
             </form>
         </div>
-        <button id="newsletter-open"
-            style="position:fixed;bottom:2rem;right:2rem;z-index:999;background:#FFD600;color:#252525;border:none;border-radius:50%;width:56px;height:56px;font-size:2rem;box-shadow:0 2px 8px #000;cursor:pointer;"
-            aria-label="Open newsletter signup">&#9993;</button>
+        <button id="newsletter-open" aria-label="Open newsletter signup">&#9993;</button>
 
 
     </main>
