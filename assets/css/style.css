@@ -1,3 +1,26 @@
+/* Hero CTA Button Styling */
+.hero-cta {
+   background-color: #f16c6b;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   padding: 0.75rem 2rem;
+   font-size: 1.3rem;
+   font-family: "Oswald", sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   cursor: pointer;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+   margin-top: 1.5rem;
+   transition: background 0.2s, color 0.2s;
+}
+
+.hero-cta:hover, .hero-cta:focus {
+   background-color: #d94a4a;
+   color: #fff8f0;
+   outline: none;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');

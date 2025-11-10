@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const openBtn = document.getElementById('newsletter-open');
     const navSignup = document.getElementById('nav-signup');
+    const heroSignup = document.getElementById('hero-signup');
     const modal = document.getElementById('newsletter-modal');
     const closeBtn = document.getElementById('newsletter-close');
     const form = document.getElementById('newsletter-form');
@@ -31,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
         openBtn.addEventListener('click', openModal);
         if (navSignup) {
             navSignup.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal();
+            });
+        }
+        if (heroSignup) {
+            heroSignup.addEventListener('click', function(e) {
                 e.preventDefault();
                 openModal();
             });
