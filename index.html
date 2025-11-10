@@ -34,11 +34,11 @@
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
 
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#newsletter-modal">Sign Up</a></li>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul id="menu" role="menubar">
+                <li role="none"><a href="index.html" class="active" aria-current="page" role="menuitem">Home</a></li>
+                <li role="none"><a href="gallery.html" role="menuitem">Gallery</a></li>
+                <li role="none"><a href="#" id="nav-signup" role="menuitem" aria-haspopup="dialog">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -139,19 +139,19 @@
                         <td>2025-08-25</td>
                         <td>Urban 5K Run</td>
                         <td>The Marker Hotel</td>
-                        <td><button>Sign Up</button></td>
+                        <td><button type="button" class="event-signup">Sign Up</button></td>
                     </tr>
                     <tr>
                         <td>2025-08-28</td>
                         <td>Trail 10K Run</td>
                         <td>Phoenix Park</td>
-                        <td><button>Sign Up</button></td>
+                        <td><button type="button" class="event-signup">Sign Up</button></td>
                     </tr>
                     <tr>
                         <td>2025-09-01</td>
                         <td>Coffee Social</td>
                         <td>The Marker Hotel</td>
-                        <td><button>Sign Up</button></td>
+                        <td><button type="button" class="event-signup">Sign Up</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -195,6 +195,7 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/b15a7a1def.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,16 +1,29 @@
 // Newsletter modal logic
 document.addEventListener('DOMContentLoaded', function() {
     const openBtn = document.getElementById('newsletter-open');
+    const navSignup = document.getElementById('nav-signup');
     const modal = document.getElementById('newsletter-modal');
     const closeBtn = document.getElementById('newsletter-close');
     const form = document.getElementById('newsletter-form');
     const emailInput = document.getElementById('newsletter-email');
     const successMsg = document.getElementById('newsletter-success');
+    const eventSignupBtns = document.querySelectorAll('.event-signup');
     if (openBtn && modal && closeBtn && form && emailInput && successMsg) {
-        openBtn.addEventListener('click', function() {
+        function openModal() {
             modal.setAttribute('aria-modal', 'true');
             modal.style.display = 'flex';
             emailInput.focus();
+        }
+        openBtn.addEventListener('click', openModal);
+        if (navSignup) {
+            navSignup.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal();
+            });
+        }
+        // Add event listeners to all event signup buttons
+        eventSignupBtns.forEach(function(btn) {
+            btn.addEventListener('click', openModal);
         });
         closeBtn.addEventListener('click', function() {
             modal.removeAttribute('aria-modal');
