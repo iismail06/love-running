@@ -502,31 +502,41 @@ main {
 }
 
 /* footer */
-#social-networks {
-   text-align: center;
+footer {
    padding: 20px 0;
-   display: flex;
-   justify-content: center;
-   gap: 2rem;
-   list-style-type: none;
+   background: #fff;
 }
-
-#social-networks li {
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 2rem;
+}
+.footer-left {
+   display: flex;
+   gap: 2rem;
+}
+.footer-left a {
    display: inline-block;
 }
-
-footer {
-   text-align: center;
-}
-#social-networks i {
+.footer-left i {
    font-size: 160%;
    color: #3a3a3a;
    padding: 5%;
    transition: color 0.2s;
 }
-
-#social-networks a:hover i {
+.footer-left a:hover i {
    color: #FFD600;
+}
+.footer-center {
+   flex: 1;
+}
+.footer-right {
+   text-align: right;
+   font-size: 1rem;
+   color: #3a3a3a;
 }
 /* Meetup Map Section Styling */
 #meetup-map {
