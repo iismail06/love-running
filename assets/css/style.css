@@ -328,6 +328,20 @@ main {
    line-height: 1em;
 }
 
+/* Footer Styles */
+footer {
+   width: 100%;
+   background: #f5f5f5; /* or your preferred color */
+}
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+
 #photo {
    line-height: 0;
 }
@@ -408,6 +422,12 @@ main {
    color: #3a3a3a;
    padding: 5%;
    transition: color 0.2s;
+}
+
+.footer-left {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
 }
 .footer-left a:hover i {
    color: #FFD600;
